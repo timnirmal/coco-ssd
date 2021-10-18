@@ -20,7 +20,7 @@ jobs:
         run: yarn install
 
       - name: Build project
-        run: CI=false yarn build
+        run: CI=false npm yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
