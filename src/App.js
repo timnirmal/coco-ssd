@@ -21,7 +21,7 @@ function App() {
             canvasRef.current.height = webcamRef.current.video.videoHeight;
 
             // Make Detections
-            const obj = await net.detect(webcamRef.current.video,1,0.9);
+            const obj = await net.detect(webcamRef.current.video);
 
             // Draw Rect
             const ctx = canvasRef.current.getContext("2d");
